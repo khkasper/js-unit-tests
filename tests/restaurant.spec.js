@@ -150,8 +150,9 @@ describe('10 - Implemente os casos de teste e a função `createMenu`', () => {
       drink: { agua: 3.9, cerveja: 6.9 },
     });
     test4.order('coxinha');
-    test4.order('cerveja');
-    assert.strictEqual(parseFloat(test4.pay()), 11.88);
+    test4.order('agua');
+    test4.order('coxinha');
+    assert.strictEqual(parseFloat(test4.pay()), 12.87);
     // Agora faça o PASSO 4 no arquivo `src/restaurant.js`.
   });
 });
